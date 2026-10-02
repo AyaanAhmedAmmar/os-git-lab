@@ -1,52 +1,59 @@
-# On Windows (PowerShell):
-@"
 # Git Workflow Lab
 
 A simple Python project demonstrating Git workflow best practices including branching, pull requests, and tagging.
 
-## Overview
-
-This project contains a basic "hello world" application showcasing:
-- Feature branch development
-- Pull request workflow
-- Version tagging
-- Collaborative development practices
-
 ## Installation
 
-\`\`\`bash
-python hello.py
-\`\`\`
+### Prerequisites
 
-## Features
+Before running this project, you need to install Git and Python.
 
-- Simple greeting functionality
-- Extensible design for adding more features
+#### Install Git
 
-## Contributing
+**Windows:**
+1. Download Git from [git-scm.com](https://git-scm.com)
+2. Run the installer and follow the setup wizard
+3. Choose default options or customize as needed
+4. Verify installation:
+```bash
+   git --version
+```
 
-See CONTRIBUTORS.md for a list of contributors to this project.
+**Mac:**
+1. Install via Homebrew:
+```bash
+   brew install git
+```
+2. Or download from [git-scm.com](https://git-scm.com)
+3. Verify installation:
+```bash
+   git --version
+```
 
-## Version
+**Linux:**
+1. Install via package manager:
+```bash
+   # Ubuntu/Debian
+   sudo apt-get install git
+   
+   # Fedora
+   sudo dnf install git
+```
+2. Verify installation:
+```bash
+   git --version
+```
 
-Current version: v1.0.0
-"@ | Out-File README.md -Encoding utf8
+### Configure Git
 
-# On Mac/Linux:
-cat > README.md << 'EOF'
-# Git Workflow Lab
+After installing Git, configure your user information:
 
-A simple Python project demonstrating Git workflow best practices including branching, pull requests, and tagging.
+```bash
+git config --global user.email "your.email@example.com"
+git config --global user.name "Your Name"
+```
 
-## Overview
-
-This project contains a basic "hello world" application showcasing:
-- Feature branch development
-- Pull request workflow
-- Version tagging
-- Collaborative development practices
-
-## Installation
+### Run the Application
 
 ```bash
 python hello.py
@@ -55,6 +62,7 @@ python hello.py
 ## Features
 
 - Simple greeting functionality
+- Multiple greeting options (formal and casual)
 - Extensible design for adding more features
 
 ## Contributing
@@ -63,5 +71,4 @@ See CONTRIBUTORS.md for a list of contributors to this project.
 
 ## Version
 
-Current version: v1.0.0
-EOF
+Current version: v1.0.0.
