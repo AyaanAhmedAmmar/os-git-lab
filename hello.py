@@ -10,7 +10,7 @@ def greet_formal(name="World"):
 
 def greet_casual(name="World"):
     """Print a casual greeting."""
-    greet(name, "Hey")
+    greet(name, "Hello")
 
 
 if __name__ == "__main__":
