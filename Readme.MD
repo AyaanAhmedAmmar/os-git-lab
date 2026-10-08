@@ -51,6 +51,13 @@ After installing Git, configure your user information:
 ```bash
 git config --global user.email "your.email@example.com"
 git config --global user.name "Your Name"
+git config --global init.defaultBranch main
+```
+
+Verify the configuration:
+
+```bash
+git config --list
 ```
 
 ### Run the Application
