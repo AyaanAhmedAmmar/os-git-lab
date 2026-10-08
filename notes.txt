@@ -1,1 +1,2 @@
 Lab 6 notes - Git stash practice
+Work in progress: line added but not committed
